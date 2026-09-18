@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="UI·서버·DB·운영까지 시스템 전체의 흐름을 이해하고 개선하는 개발자 진명배의 포트폴리오" />
+  <meta name="theme-color" content="#f6f6f3" />
+  <title>진명배 | Java Backend Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f6f6f3'/%3E%3Cpath d='M17 16h8v25c0 8-4 12-12 12v-7c3 0 4-2 4-5V16zm14 0h9l6 14 6-14h9v37h-8V30l-5 12h-5l-5-12v23h-7V16z' fill='%231d3f8f'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="맨 위로"><span class="brand-mark">JM</span><span>진명배</span></a>
+    <nav aria-label="주요 메뉴">
+      <a href="#scope">경험</a>
+      <a href="#cases">대표 사례</a>
+      <a href="#skills">기술</a>
+      <a href="#project">프로젝트</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="role">Java Backend Developer · Financial Systems</p>
+        <h1 id="hero-title">UI·서버·DB·운영까지,<br /><span>시스템 전체의 흐름을 이해하고 개선합니다.</span></h1>
+        <p class="hero-description">금융권 차세대 채권관리시스템의 구축부터 오픈 이후 안정화·신규 개발까지 참여했습니다. 화면에 보이는 현상만 보지 않고 요청 흐름, 데이터 관계, 실행 환경을 함께 확인합니다.</p>
+      </div>
+      <dl class="hero-facts" aria-label="개발자 요약">
+        <div><dt>주력 기술</dt><dd>Java · Oracle · Nexacro</dd></div>
+        <div><dt>업무 범위</dt><dd>구축 · 개발 · 운영 · 장애 대응</dd></div>
+        <div><dt>운영 환경</dt><dd>JEUS · WebToB · Tomcat · Linux</dd></div>
+        <div><dt>시스템 규모</dt><dd>동시접속 600명 이상</dd></div>
+      </dl>
+    </section>
+
+    <section id="scope" class="section shell" aria-labelledby="scope-title">
+      <div class="section-title"><span>01</span><h2 id="scope-title">경험</h2></div>
+      <div class="category-tabs" role="tablist" aria-label="경험 분야 선택">
+        <button id="tab-development" class="category-tab active" type="button" role="tab" aria-selected="true" aria-controls="panel-development" data-tab="development"><span>01</span><strong>개발</strong></button>
+        <button id="tab-database" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-database" data-tab="database" tabindex="-1"><span>02</span><strong>DB</strong></button>
+        <button id="tab-server" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-server" data-tab="server" tabindex="-1"><span>03</span><strong>서버·운영</strong></button>
+        <button id="tab-security" class="category-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-security" data-tab="security" tabindex="-1"><span>04</span><strong>보안·홈페이지</strong></button>
+      </div>
+      <div class="category-panels">
+        <article id="panel-development" class="category-panel active" role="tabpanel" aria-labelledby="tab-development" data-panel="development">
+          <div class="category-intro"><h3>현업 요구를 화면·서버·DB의<br />실제 기능으로 구현했습니다.</h3><p>Nexacro 화면부터 Java 서비스, Oracle 프로시저까지 하나의 업무 흐름으로 연결했습니다.</p></div>
+          <div class="category-work"><h4>주요 업무</h4><ul><li>Dataset·Grid·Div·Combo와 공통 컴포넌트 개발</li><li>등록·수정·승인·반려·회수 등 상태별 서버 로직 구현</li><li>입력 검증, 화면 간 파라미터, 팝업·트랜잭션 연계</li><li>수수료·출력물 승인·검사일지·법조치 조회 기능 개발</li></ul><p class="stack-line"><b>사용 기술</b> Nexacro / JavaScript / Java / Spring MVC / Oracle / PL/SQL</p></div>
+        </article>
+        <article id="panel-database" class="category-panel" role="tabpanel" aria-labelledby="tab-database" data-panel="database" hidden>
+          <div class="category-intro"><h3>데이터 관계를 먼저 파악하고<br />변경 범위와 결과를 검증했습니다.</h3><p>업무 키와 테이블 관계를 기준으로 중복·누락을 확인하고, 여러 이력과 마스터의 변경을 트랜잭션으로 처리했습니다.</p></div>
+          <div class="category-work"><h4>주요 업무</h4><ul><li>Oracle 프로시저·패키지 개발과 실행 오류 분석</li><li>조인 조건별 조회 건수·중복·누락 비교</li><li>다중 테이블 변경과 Java 트랜잭션 처리</li><li>데이터 분석·이행, 세션·SQL_ID·실행 SQL 점검</li></ul><p class="stack-line"><b>사용 기술</b> Oracle / SQL / PL/SQL / MariaDB / MySQL / ToAD</p></div>
+        </article>
+        <article id="panel-server" class="category-panel" role="tabpanel" aria-labelledby="tab-server" data-panel="server" hidden>
+          <div class="category-intro"><h3>로그와 설정, 연결 상태를 따라가며<br />장애 원인을 좁혔습니다.</h3><p>개발·운영 환경의 차이와 실제 반영 파일, 서버 자원, 세션과 요청값을 함께 확인했습니다.</p></div>
+          <div class="category-work"><h4>주요 업무</h4><ul><li>class·WAR 배포, 설정·권한·재기동 점검</li><li>로그·프로세스·메모리·스레드·포트 확인</li><li>Read timeout, 연결 거부, SSL·세션 문제 분석</li><li>서버 간 FTP·SFTP·SCP 전송과 대외 연계 경로 점검</li></ul><p class="stack-line"><b>사용 기술</b> JEUS / WebToB / Tomcat / Apache / Linux / SSH / FTP</p></div>
+        </article>
+        <article id="panel-security" class="category-panel" role="tabpanel" aria-labelledby="tab-security" data-panel="security" hidden>
+          <div class="category-intro"><h3>기존 기능과 권한 조건을 유지하며<br />취약한 구조를 개선했습니다.</h3><p>대외 홈페이지의 게시판·관리자·파일 기능을 운영하며 데이터 접근과 인증·접근 제어를 보완했습니다.</p></div>
+          <div class="category-work"><h4>주요 업무</h4><ul><li>JSP 동적 SQL을 DAO·MyBatis Mapper 구조로 전환</li><li>파라미터 바인딩을 통한 SQL Injection 대응</li><li>게시판 인증 조건과 관리자 허용 IP 검증</li><li>stacktrace·환경 파일·내부정보 노출 점검</li></ul><p class="stack-line"><b>사용 기술</b> Java / JSP / JSTL / MyBatis / MariaDB / IIS</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cases" class="section cases-section" aria-labelledby="cases-title">
+      <div class="shell">
+        <div class="section-title light"><span>02</span><div><h2 id="cases-title">대표 사례</h2><p>실제 운영 환경에서 문제를 찾고 개선까지 연결한 경험입니다.</p></div></div>
+        <div class="case-list">
+          <article class="case-entry">
+            <div class="case-meta"><span class="case-number">01</span><span class="case-type">장애 분석</span><small>Java / JEUS / WebToB / Network</small></div>
+            <p class="problem-label">문제 상황</p>
+            <h3>이중화 환경에서 간헐적으로 반복된 엑셀 다운로드 실패</h3>
+            <p class="case-context">수개월 동안 오류가 이어졌지만 화면과 기존 로그만으로는 원인이 드러나지 않았습니다.</p>
+            <div class="case-process">
+              <div><b>확인·추적</b><p>애플리케이션 로그와 통신 패킷을 확인하고, 세션 정보와 실제 요청값을 단계별로 대조했습니다.</p></div>
+              <div><b>해결</b><p>세션과 요청값이 일치하지 않는 구간을 특정해 분석 근거를 협력업체에 전달했습니다.</p></div>
+              <div><b>결과</b><p>처리 방식과 자원 사용 개선으로 연결하고 운영 환경에서 정상 동작을 확인했습니다.</p></div>
+            </div>
+          </article>
+
+          <article class="case-entry">
+            <div class="case-meta"><span class="case-number">02</span><span class="case-type">보안</span><small>Java / JSP / MyBatis / MariaDB</small></div>
+            <p class="problem-label">문제 상황</p>
+            <h3>JSP에서 조합한 SQL에 입력값이 직접 반영되던 구조</h3>
+            <p class="case-context">운영 중인 게시판의 기능과 권한 조건은 유지하면서 SQL Injection 취약 구간을 개선해야 했습니다.</p>
+            <div class="case-process">
+              <div><b>분석</b><p>SQL 생성 지점과 게시판별 조회·인증·권한 조건, 파일 처리 흐름을 확인했습니다.</p></div>
+              <div><b>해결</b><p>DAO·MyBatis Mapper 구조를 구성하고 문자열 결합 SQL을 파라미터 바인딩 방식으로 전환했습니다.</p></div>
+              <div><b>결과</b><p>데이터 접근 역할을 분리했으며 이후 1년 이상 모의해킹 점검에 안정적으로 대응했습니다.</p></div>
+            </div>
+          </article>
+
+          <article class="case-entry">
+            <div class="case-meta"><span class="case-number">03</span><span class="case-type">업무시스템</span><small>Nexacro / Java / Oracle / PL/SQL</small></div>
+            <p class="problem-label">업무 상황</p>
+            <h3>서로 다른 업무 규칙을 운영 중인 차세대 시스템에 반영</h3>
+            <p class="case-context">오픈 이후에도 현업별 신규 기능과 개선 요청이 이어져 기존 기능에 미치는 영향을 함께 검토해야 했습니다.</p>
+            <div class="case-process">
+              <div><b>분석</b><p>요구사항을 화면 상태, 서버 분기, 데이터 처리 조건으로 나누고 기능별 영향 범위를 확인했습니다.</p></div>
+              <div><b>개발</b><p>수수료·출력물 승인·검사일지·법조치 조회의 화면, Java 서비스, Oracle 프로시저를 개발했습니다.</p></div>
+              <div><b>운영</b><p>소스 반영부터 사용자 문의와 장애 대응까지 이어서 수행하며 오픈 이후 안정화를 지원했습니다.</p></div>
+            </div>
+          </article>
+
+          <article class="case-entry">
+            <div class="case-meta"><span class="case-number">04</span><span class="case-type">데이터 처리</span><small>Oracle / SQL / Java Transaction</small></div>
+            <p class="problem-label">문제 상황</p>
+            <h3>다채권 고객의 데이터 변경 시 일부 이력·마스터가 누락될 가능성</h3>
+            <p class="case-context">한 고객에게 여러 채권과 발송 이력·우편 이력·마스터가 연결되어 있어 변경 대상을 정확히 정해야 했습니다.</p>
+            <div class="case-process">
+              <div><b>분석</b><p>공통 업무 키와 테이블 관계를 확인하고 다채권 고객의 전체 변경 대상과 예외 범위를 조회했습니다.</p></div>
+              <div><b>해결</b><p>연결된 이력·마스터 변경을 하나의 Java 트랜잭션 안에서 처리했습니다.</p></div>
+              <div><b>검증</b><p>변경 전후 조회 결과를 비교해 누락되거나 과도하게 반영된 데이터가 없는지 확인했습니다.</p></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" aria-labelledby="operations-title">
+      <div class="section-title"><span>03</span><h2 id="operations-title">운영에서 해온 일</h2></div>
+      <div class="operations-list">
+        <article><h3>장애 원인 분석</h3><p>API timeout, 네트워크 지연, Oracle CPU, 스레드·메모리, 포트·세션을 확인해 원인 범위를 좁혔습니다.</p></article>
+        <article><h3>변경 영향도 검토</h3><p>DB 이중화 서비스 IP, SSL 인증서, 환경 파일, 라이선스, 재기동 여부가 서비스에 미치는 영향을 확인했습니다.</p></article>
+        <article><h3>배포와 파일 전송</h3><p>Git 형상관리, class·WAR 반영, FTP·SFTP·SCP 전송 과정에서 경로·권한·반영 상태를 점검했습니다.</p></article>
+        <article><h3>외부 연계 확인</h3><p>전문 송수신과 API 요청에서 데이터, 포트, 권한, 응답 상태를 함께 살피고 협력업체와 분석 근거를 공유했습니다.</p></article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="shell">
+        <div class="section-title light"><span>04</span><h2 id="skills-title">기술</h2></div>
+        <div class="skill-list">
+          <div><b>언어·화면</b><p>Java, JavaScript, Nexacro, JSP, JSTL, HTML, CSS</p><small>업무화면, 입력 검증, 서비스 로직, 게시판·관리자 기능 개발</small></div>
+          <div><b>프레임워크·통신</b><p>Spring, Spring MVC, MyBatis, REST API, gRPC, Protocol Buffers</p><small>요청·응답, 예외·트랜잭션, 데이터 접근, 외부 API와 RPC 통신</small></div>
+          <div><b>데이터베이스</b><p>Oracle, SQL, PL/SQL, MariaDB, MySQL, MSSQL</p><small>프로시저·패키지, 조인·중복 분석, 다중 테이블 처리, 데이터 이행</small></div>
+          <div><b>서버·미들웨어</b><p>JEUS, WebToB, Tomcat, Apache, IIS, Linux</p><small>배포·재기동, 설정·로그, 프로세스·메모리·포트와 장애 분석</small></div>
+          <div><b>형상·접속·전송</b><p>Git, SSH, FTP, SFTP, SCP, WinSCP, MobaXterm</p><small>형상관리, 서버 접속, 파일 배포, 경로·권한·전송 상태 점검</small></div>
+          <div><b>개발·DB 도구</b><p>STS, Eclipse, IntelliJ, VS2017, ToAD, HeidiSQL, Maven, Gradle</p><small>소스 개발·빌드, Oracle·MariaDB 분석, 내부망 라이브러리 반영</small></div>
+          <div><b>프로젝트·유지보수</b><p>C#, Unity, Photon PUN, React, VB.NET, ASP.NET</p><small>Unity–Java gRPC 연동, React 사용, 기존 ASP.NET·VB.NET 페이지 유지보수</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="section shell" aria-labelledby="project-title">
+      <div class="section-title"><span>05</span><h2 id="project-title">졸업작품</h2></div>
+      <div class="project-layout">
+        <div class="project-copy"><p class="case-type">Unity 게임 데이터 저장 서버</p><h3>클라이언트와 서버 사이의<br />통신 계약부터 데이터 저장까지</h3><p>최대 4인 협동 플레이를 목표로 한 2D 무협 메트로배니아 팀 프로젝트에서 데이터 통신과 저장 영역을 담당했습니다.</p></div>
+        <ol class="project-flow">
+          <li><span>01</span><div><b>Protocol Buffers</b><p>요청·응답 메시지와 서비스 메서드 정의</p></div></li>
+          <li><span>02</span><div><b>Java gRPC Server</b><p>RPC 요청 처리와 MySQL 저장·조회 구현</p></div></li>
+          <li><span>03</span><div><b>Unity · C#</b><p>비동기 저장·불러오기 호출 연동</p></div></li>
+          <li><span>04</span><div><b>MySQL</b><p>사용자·위치·아이템·스킬 관계와 키 설계</p></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell"><strong>진명배 · Java Backend Developer</strong><span>상세 경력과 연락처는 지원서에서 확인하실 수 있습니다.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
